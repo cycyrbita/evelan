@@ -1,0 +1,66 @@
+
+.gold {
+    padding-left: 50%;
+
+    p {
+        max-width: 515px;
+        margin-top: 20px;
+        font-size: 18px;
+        color: #272727;
+    }
+}
+
+.gold__title {
+    margin-bottom: 40px;
+}
+
+.gold__subtitle {
+    max-width: 405px;
+    font-size: 26px;
+    font-weight: 500;
+    color: #272727;
+}
+
+@media (max-width: 1280px) {
+    .gold__title {
+        margin-bottom: 15px;
+    }
+
+    .gold__subtitle {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gold {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .gold__title {
+        position: relative;
+        font-size: 30px;
+        padding-bottom: 250px;
+
+        br {
+            display: none;
+        }
+
+        &::before {
+            position: absolute;
+            right: -15px;
+            bottom: 0;
+            left: -15px;
+            height: 250px;
+            background-image: url("../media/gold/bg.jpg");
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            content: '';
+        }
+    }
+
+    .gold__subtitle {
+        font-size: 19px;
+    }
+}
