@@ -1,19 +1,23 @@
 
 .form {
     width: 100%;
-    max-width: 330px;
+    max-width: 350px;
     padding: 30px;
-    background-color: #f2eff7;
-    border-radius: 5px;
+    background-color: #fff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     margin-left: auto;
+}
+
+.form__wrap {
+    padding: 25px;
+    border: 2px solid #d9a6b3;
 }
 
 .form__title {
     margin-bottom: 20px;
     text-align: center;
-    font-size: 22px;
-    text-transform: uppercase;
+    font-size: 25px;
+    font-family: "NotoSerif", sans-serif;
 
     mark {
         display: block;
@@ -32,16 +36,16 @@
 
 .form__price-old {
     display: inline-block;
-    color: #898989;
+    color: #000;
     margin-right: 15px;
     text-decoration: line-through;
+    font-size: 15px;
 }
 
 .form__price-new {
     display: inline-block;
     font-size: 26px;
-    font-weight: 800;
-    color: #efc123;
+    color: #ba4254;
     line-height: 1;
 }
 
@@ -55,6 +59,7 @@
 
 .form__label-name {
     margin-bottom: 5px;
+    font-size: 14px;
 }
 
 .form__field {
@@ -62,11 +67,10 @@
     background-color: #fff;
     border: 0;
     outline: none;
-    padding: 15px;
+    padding: 12px;
     font-weight: 300;
     font-size: 18px;
-    border-radius: 7px;
-    border: 2px solid #f0f0f0;
+    border: 1px solid #000;
 }
 
 .form__select {
@@ -89,7 +93,7 @@
 .form__time-title {
     margin-bottom: 5px;
     text-align: center;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .form__time-body {
@@ -108,16 +112,18 @@
     margin-bottom: 25px;
     padding: 0 10px;
     background-color: #fff;
+    border: 1px solid #000;
 
     & span {
         &:nth-child(1) {
-            font-size: 40px;
-            font-weight: 700;
+            font-size: 28px;
+            font-family: "NotoSerif", sans-serif;
         }
 
         &:nth-child(2) {
             position: absolute;
             bottom: -25px;
+            font-size: 14px;
         }
     }
 }
@@ -128,9 +134,8 @@
 
 @media (max-width: 1280px) {
     .form {
-        max-width: 50%;
-        margin-right: auto;
-        margin-left: 0;
+        margin-top: 40px;
+        margin-left: auto;
     }
 
     .form__title {
@@ -159,16 +164,13 @@
         padding-top: 30px;
         padding-right: 15px;
         padding-left: 15px;
+        box-shadow: none;
+        margin-top: 0;
     }
     
     .form__time-item {
         margin-right: 5px;
         margin-left: 5px;
-        & span {
-            &:nth-child(1) {
-                font-size: 32px;
-            }
-        }
     }
 
     .form__title {

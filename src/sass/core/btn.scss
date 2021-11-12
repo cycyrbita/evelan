@@ -4,17 +4,15 @@
 .btn {
     padding: 19px 15px;
     display: inline-block;
-    font-weight: 800;
-    text-transform: uppercase;
-    background: #c1e281;
+    font-weight: 500;
+    background: rgb(85,102,143);
+    background: linear-gradient(273deg, rgba(85,102,143,1) 0%, rgba(156,115,143,1) 100%);
     text-align: center;
     border: 0;
     text-decoration: none;
     opacity: .98;
-    border-radius: 5px;
-    box-shadow: 13px 13px 15px rgba(0, 0, 0, 0.12);
-    font-size: 15px;
-    color: #000;
+    color: #fff;
+    letter-spacing: 1px;
 
     &:hover {
         opacity: 1;
