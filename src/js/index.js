@@ -58,4 +58,8 @@ $(document).ready(function () {
     AOS.init({
         offset: 200
     });
+
+    $(".benefit__media").twentytwenty({
+        no_overlay: true
+    });
 });

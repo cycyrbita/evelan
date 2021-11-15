@@ -16,6 +16,14 @@
         background-position: center top;
         background-image: url("../media/section/gold.jpg");
     }
+
+    &_benefit {
+        min-height: 600px;
+        position: relative;
+        background-position: center top;
+        background-image: url("../media/section/benefit.jpg");
+        overflow: hidden;
+    }
 }
 
 .section__title {
@@ -30,6 +38,11 @@
     .section {
         &_face {
             padding-bottom: 60px;
+        }
+
+        &_benefit {
+            background-image: url("../media/section/benefit-1280.jpg");
+            background-size: cover;
         }
     }
 
