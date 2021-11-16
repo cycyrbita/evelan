@@ -1,0 +1,123 @@
+
+.instruction__title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.instruction__subtitle {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.instruction__body {
+    display: flex;
+    justify-content: center;
+}
+
+.instruction__item {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    width: 25%;
+    padding: 15px;
+    text-align: center;
+
+    &:nth-child(2n) {
+        margin-top: 60px;
+    }
+}
+
+.instruction__media {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    padding: 15px;
+    border: 2px solid #ede7e1;
+    border-radius: 50%;
+}
+
+.instruction__img {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.instruction__count {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #ece6df;
+    font-size: 18px;
+}
+
+.instruction__info {
+    margin-top: 30px;
+    font-size: 17px;
+}
+
+.instruction__footer {
+    margin-top: 60px;
+    padding: 15px 40px;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ece6df;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media (max-width: 1280px) {
+    .instruction__body {
+        flex-wrap: wrap;
+    }
+
+    .instruction__item {
+        width: 50%;
+        align-items: center;
+
+        &:nth-child(2n) {
+            margin-top: 0;
+        }
+    }
+
+    .instruction__info {
+        br {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .instruction__item {
+        width: 100%;
+    }
+
+    .instruction__footer {
+        padding: 15px;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .instruction__title {
+        font-size: 28px;
+    }
+
+    .instruction__subtitle {
+        font-size: 15px;
+    }
+
+    .instruction__info {
+        margin-top: 15px;
+    }
+}
