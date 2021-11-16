@@ -32,6 +32,14 @@
     &_sostav {
         background-color: #ede7e0;
     }
+
+    &_prof {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        background-position: center top;
+        background-image: url("../media/section/prof.jpg");
+        background-color: #23256f;
+    }
 }
 
 .section__title {
@@ -51,6 +59,13 @@
         &_benefit {
             background-image: url("../media/section/benefit-1280.jpg");
             background-size: cover;
+        }
+
+        &_prof {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-position: center bottom;
+            background-image: url("../media/section/prof-1280.jpg");
         }
     }
 
@@ -73,6 +88,12 @@
             background-color: #f7f2ec;
             background-position: center bottom;
             background-image: url("../media/section/gold-768.jpg");
+        }
+
+        &_prof {
+            background-position: center top;
+            background-image: url("../media/section/prof-768.jpg");
+            background-color: #2e2a60;
         }
     }
 }

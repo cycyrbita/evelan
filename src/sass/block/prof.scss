@@ -1,0 +1,66 @@
+
+.prof {
+    padding-right: 50%;
+
+    & > p {
+        font-size: 18px;
+        color: #fff;
+
+        &:nth-child(2) {
+            font-size: 22px;
+        }
+
+        & + p {
+            margin-top: 20px;
+        }
+    }
+}
+
+.prof__title {
+    margin-bottom: 30px;
+    font-size: 52px;
+    color: #fff;
+}
+
+.prof__footer {
+    display: flex;
+    margin-top: 40px;
+    font-size: 20px;
+    color: #fff;
+    font-style: italic;
+}
+
+.prof__id {
+    margin-left: 40px;
+}
+
+@media (max-width: 1280px) {
+    .prof__title {
+        font-size: 33px;
+    }
+}
+
+@media (max-width: 768px) {
+    .prof {
+        padding-right: 0;
+    }
+
+    .prof__title {
+        padding-top: 280px;
+        background-image: url("../media/prof/human.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+}
+
+@media (max-width: 480px) {
+    .prof__footer {
+        flex-direction: column;
+        font-size: 19px;
+    }
+
+    .prof__id {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
