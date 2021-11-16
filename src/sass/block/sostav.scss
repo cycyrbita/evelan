@@ -1,0 +1,212 @@
+
+.sostav {
+    position: relative;
+}
+
+.sostav__title {
+    margin-bottom: 60px;
+    text-align: center;
+    margin-bottom: -120px;
+}
+
+.sostav__product {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 0;
+    padding-top: 110px;
+    padding-bottom: 100px;
+    transform: translateX(-50%);
+    max-width: 600px;
+
+    &::before {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        max-width: 440px;
+        transform: translateX(-50%);
+        background-image: url("../media/update/gold.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center top;
+        content: '';
+    }
+
+    &::after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background-image: url("../media/before.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center bottom;
+    }
+}
+
+.sostav__box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sostav__item {
+    display: flex;
+    flex: 0 0 auto;
+    width: 50%;
+    margin-bottom: 30px;
+
+    &:nth-child(2n) {
+        justify-content: flex-end;
+        text-align: right;
+
+        .sostav__body {
+            flex-direction: row-reverse;
+        }
+
+        .sostav__media {
+            margin-right: 0;
+            margin-left: 15px;
+        }
+    }
+}
+
+.sostav__body {
+    display: flex;
+    max-width: 390px;
+}
+
+.sostav__media {
+    flex: 0 0 auto;
+    width: 102px;
+    height: 102px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: 6px solid #fff;
+    overflow: hidden;
+}
+
+.sostav__name {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #2e2a60;
+    font-family: "NotoSerif", sans-serif;
+}
+
+.sostav__info {
+    font-size: 15px;
+    line-height: 21px;
+}
+
+@media (max-width: 1280px) {
+    .sostav__title {
+        margin-bottom: 50px;
+    }
+
+    .sostav__product {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        transform: translateX(0);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .sostav__body {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .sostav__item {
+        padding-right: 15px;
+        border: 15px solid #fff;
+        margin-bottom: 15px;
+
+        &:nth-child(2n) {
+            padding-right: 0;
+            padding-left: 15px;
+
+            .sostav__body {
+                flex-direction: column;
+                align-items: flex-end;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .sostav__item {
+        width: 100%;
+        border: 0;
+        text-align: left;
+        margin-bottom: 0;
+
+        &:nth-child(2n) {
+            justify-content: flex-start;
+            padding: 0;
+
+            .sostav__body {
+                flex-direction: row;
+                text-align: left;
+                align-items: flex-start;
+            }
+
+            .sostav__media {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+        }
+
+        & + & {
+            margin-top: 30px;
+        }
+    }
+
+    .sostav__body {
+        flex-direction: row;
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .sostav__media {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .sostav__title {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .sostav__name {
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+
+    .sostav__media {
+        width: 64px;
+        height: 64px;
+    }
+
+    .sostav__product {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 400px;
+        padding-top: 70px;
+        padding-bottom: 60px;
+        margin-bottom: 30px;
+
+        &::before {
+            max-width: 280px;
+        }
+    }
+}

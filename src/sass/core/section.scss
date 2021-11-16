@@ -28,6 +28,10 @@
     &_job {
         background-color: #ece6df;
     }
+
+    &_sostav {
+        background-color: #ede7e0;
+    }
 }
 
 .section__title {
@@ -79,6 +83,10 @@
             padding-bottom: 30px;
             background-image: none;
             background-color: #fff;
+        }
+
+        &_sostav {
+            overflow: hidden;
         }
     }
 }
