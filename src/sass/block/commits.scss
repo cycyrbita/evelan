@@ -1,11 +1,28 @@
+
+.commits__callback {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    background-color: #ece6df;
+    padding: 15px 15px 15px 180px;
+    font-size: 20px;
+}
+
+.commits__human {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    flex: 0 0 auto;
+}
+.commits__product {
+    flex: 0 0 auto;
+    max-width: 150px;
+}
+
 .commits__title {
-    line-height: 1;
-    font-weight: 800;
-    font-size: 34px;
     text-align: center;
-    color: #30588d;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .commits__subtitle {
@@ -90,55 +107,21 @@
     outline: none;
 }
 
-.commits__item {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding: 33px 35px 20px;
-    background-color: #f5f6f9;
-    // box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.58);
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.commits__face {
-    position: absolute;
-    top: 20px;
-    left: 35px;
-    width: 82px;
-    height: 82px;
-    overflow: hidden;
-    background-color: #000;
-    border-radius: 50%;
-    border: 7px solid #e96771;
-}
-
 .commits__name {
-    min-height: 82px;
     font-size: 18px;
-    font-weight: 800;
-    padding-left: 95px;
-    color: #30588d;
-    text-transform: uppercase;
-
-    & span {
-        display: block;
-        margin-top: 5px;
-        font-weight: 400;
-        color: #000;
-    }
+    font-weight: 500;
+    text-align: center;
+    color: #2e2a60;
 }
 
 .commits__description {
-    width: 100%;
+    margin-top: 20px;
     margin-bottom: 20px;
-    line-height: 22px;
     font-size: 18px;
+    text-align: center;
+    font-family: "NotoSerif", sans-serif;
+    font-size: 26px;
+    font-style: italic;
 }
 
 .commits__stars img {
@@ -146,13 +129,27 @@
     max-width: 100%;
 }
 
-@media (max-width: 480px) {
-    .commits__item {
-        padding: 23px 15px 15px;
+@media (max-width: 768px) {
+    .commits__callback {
+        padding: 30px;
+        margin-top: 150px;
     }
 
+    .commits__human {
+        bottom: 100%;
+        left: 10px;
+    }
+
+    .commits__product {
+        position: absolute;
+        bottom: calc(100% - 15px);
+        right: 0;
+    }
+}
+
+@media (max-width: 480px) {
     .commits__description {
-        font-size: 16px;
+        font-size: 19px;
     }
 
     .commits__box .owl-dots {
@@ -178,19 +175,14 @@
         margin-bottom: 15px;
         font-size: 26px;
         text-align: center;
-
-        & span {
-            display: inline;
-        }
-    }
-
-    .commits__face {
-        width: 69px;
-        height: 69px;
-        border-radius: 50%;
     }
 
     .commits__title {
         font-size: 32px;
+    }
+
+    .commits__callback {
+        padding: 15px;
+        font-size: 18px;
     }
 }
