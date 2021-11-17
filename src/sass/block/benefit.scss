@@ -39,6 +39,17 @@
         background-repeat: no-repeat;
         background-size: contain;
         content: '';
+        animation: 20s infinite linear rotate;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg);
     }
 }
 

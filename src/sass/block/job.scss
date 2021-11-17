@@ -20,6 +20,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 20px;
+    transition: 0.3s transform;
 
     &:nth-child(1) {
         background-image: url("../media/job/img-1.jpg");
@@ -36,6 +37,10 @@
     p {
         font-size: 15px;
         line-height: 21px;
+    }
+
+    &:hover {
+        transform: scale(.98);
     }
 }
 
