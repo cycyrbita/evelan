@@ -59,7 +59,11 @@ $(document).ready(function () {
         offset: 200
     });
 
-    $(".benefit__media").twentytwenty({
-        no_overlay: true
-    });
+    function twent() {
+        $(".benefit__media").twentytwenty({
+            no_overlay: true
+        });
+    }
+
+    setTimeout(twent, 1000);
 });
