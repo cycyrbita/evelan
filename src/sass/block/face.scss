@@ -142,11 +142,18 @@
 @media (max-width: 480px) {
     .face__subtitle {
         font-size: 17px;
+        text-align: left;
     }
 
     .face__title {
         font-size: 34px;
         margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .face__item {
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .face__product {

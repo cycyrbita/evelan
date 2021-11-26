@@ -60,13 +60,15 @@
     }
 
     .benefit__wrap {
-        position: static;
+        position: relative;
         width: auto;
         max-width: 500px;
         margin-right: auto;
         margin-left: auto;
         transform: translateX(0);
         margin-bottom: -60px;
+        padding-top: 50px;
+        left: auto;
 
         &::before {
             width: 500px;
